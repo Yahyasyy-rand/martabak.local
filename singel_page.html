@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Portfolio</title>
+    <style>
+        /* CSS Langsung di dalam HTML agar praktis */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #2d3436;
+            --accent-color: #0984e3;
+            --secondary-color: #636e72;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        header p {
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        /* Project List */
+        .project-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .project-item:hover {
+            border-color: var(--accent-color);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .project-item h3 {
+            margin: 0 0 10px 0;
+            color: var(--accent-color);
+        }
+
+        /* Contact Link */
+        .contact-links a {
+            display: inline-block;
+            margin-right: 15px;
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px solid transparent;
+            transition: 0.3s;
+        }
+
+        .contact-links a:hover {
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 100px;
+            color: #b2bec3;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Nama Anda</h1>
+            <p>Web Developer & Tech Enthusiast</p>
+        </header>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>Tentang Saya</h2>
+            <p>Halo! Saya adalah seorang pengembang web yang fokus pada pembuatan aplikasi yang cepat, responsif, dan mudah digunakan. Saya senang memecahkan masalah melalui kode.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projek</h2>
+            
+            <div class="project-item">
+                <h3>Sistem Manajemen Inventori</h3>
+                <p>Aplikasi berbasis web untuk melacak stok barang secara real-time menggunakan HTML, CSS, dan JavaScript.</p>
+            </div>
+
+            <div class="project-item">
+                <h3>Redesign Landing Page</h3>
+                <p>Meningkatkan konversi pengguna hingga 20% dengan memperbaiki UI/UX pada halaman utama klien.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Kontak</h2>
+            <div class="contact-links">
+                <a href="mailto:email@kamu.com">Email</a>
+                <a href="https://github.com/username">GitHub</a>
+                <a href="https://linkedin.com/in/username">LinkedIn</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Dibuat dengan Kode Sederhana</p>
+        </footer>
+    </div>
+
+</body>
+</html>
